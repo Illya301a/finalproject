@@ -17,24 +17,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar flex justify-between">
-            <div class="navbar__logo flex">
-                <div class="navbar__logo-image"><img src="assets/Icon.svg" alt="icon"></div>
-                <div class="navbar__logo-text">LuxeGlow</div>
+    <header>
+        <div class="container">
+            <nav class="navbar flex justify-between">
+                <div class="navbar__logo flex">
+                    <div class="navbar__logo-image"><img src="assets/Icon.svg" alt="icon"></div>
+                    <div class="navbar__logo-text">LuxeGlow</div>
+                </div>
+
+                <input type="text" class="navbar__search" placeholder="Find Products">
+                <select class="dropdown navbar__dropdown">
+                    <option value="#">Skin types</option>
+                    <option value="lorem">lorem</option>
+                    <option value="ipsum">ipsum</option>
+                    <option value="dolor">dolor</option>
+                </select>
+
+                <button class="button navbar__button">Join Now</button>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="discover flex flex-col justify-center items-center text-center">
+                <div class="discover__title">Elevate Your <br> Glow</div>
+                <div class="discover__subtitle">Discover your perfect skincare.</div>
+                <div class="discover__button">
+                    <button>Explore Range</button>
+                </div>
             </div>
+        </div>
 
-            <input type="text" class="navbar__search" placeholder="Find Products">
-            <select class="dropdown navbar__dropdown">
-                <option value="#">Skin types</option>
-                <option value="lorem">lorem</option>
-                <option value="ipsum">ipsum</option>
-                <option value="dolor">dolor</option>
-            </select>
-
-            <button class="button navbar__button">Join Now</button>
-        </nav>
-    </div>
+        <div class="container">
+            <div class="gallery relative">
+                <img class="gallery-center" src="assets/gallery/1.png" alt="centerimg">
+                <div class="gallery__secondary flex justify-between">
+                    <img class="gallery__secondary-left" src="assets/gallery/2.png" alt="leftimg">
+                    <img class="gallery__secondary-right" src="assets/gallery/3.png" alt="rightimg">
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
