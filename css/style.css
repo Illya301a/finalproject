@@ -12,26 +12,22 @@ body {
 .navbar {
   padding: 8px;
 }
-
-.navbar__logo {
+.navbar .navbar__logo {
   margin-block: auto;
   padding-inline: 8px;
   gap: 8px;
 }
-
-.navbar__logo-image {
+.navbar .navbar__logo .navbar__logo-image {
   width: 24px;
   height: 24px;
 }
-
-.navbar__logo-text {
+.navbar .navbar__logo .navbar__logo-text {
   color: #40513B;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
 }
-
-.navbar__search {
+.navbar .navbar__search {
   width: 903px;
   border: 1px solid #7AAC7F;
   border-radius: 8px;
@@ -42,8 +38,7 @@ body {
   font-size: 14px;
   line-height: 21px;
 }
-
-.navbar__dropdown {
+.navbar .navbar__dropdown {
   padding-inline: 16px;
   gap: 8px;
   color: #40513B;
@@ -51,8 +46,7 @@ body {
   line-height: 19px;
   font-size: 12px;
 }
-
-.navbar__button {
+.navbar .navbar__button {
   background-color: #815CCE;
   border-radius: 8px;
   color: #FFFFFF;
