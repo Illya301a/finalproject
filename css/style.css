@@ -1,1 +1,64 @@
-/*# sourceMappingURL=style.css.map */
+@import "tailwindcss/preflight.css" layer(base);
+body {
+  background-color: #E1EBDC;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  margin-inline: auto;
+}
+
+.navbar {
+  padding: 8px;
+}
+
+.navbar__logo {
+  margin-block: auto;
+  padding-inline: 8px;
+  gap: 8px;
+}
+
+.navbar__logo-image {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar__logo-text {
+  color: #40513B;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.navbar__search {
+  width: 903px;
+  border: 1px solid #7AAC7F;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 4px;
+  color: #6C8F70;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.navbar__dropdown {
+  padding-inline: 16px;
+  gap: 8px;
+  color: #40513B;
+  font-weight: 600;
+  line-height: 19px;
+  font-size: 12px;
+}
+
+.navbar__button {
+  background-color: #815CCE;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding-inline: 20px;
+  padding-block: 12px;
+  gap: 4px;
+}/*# sourceMappingURL=style.css.map */
