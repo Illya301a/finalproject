@@ -5,6 +5,7 @@ body {
 
 .container {
   font-family: "Inter", sans-serif;
+  width: 1280px;
   margin-inline: auto;
 }
 
