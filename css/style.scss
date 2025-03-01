@@ -283,18 +283,65 @@ body{
         .get-started__container-text_button{
             background-color: vars.$buttons-color;
             color: vars.$white-color;
-            max-width: 360px;
-            border-radius: 8px;
             padding-inline: 48px;
             padding-block: 16px;
+            max-width: 360px;
+            border-radius: 8px;
             gap: 4px;
         }
         .get-started__container-text_button span{
-            padding-inline: 4px;
+            padding-inline: 48px;
             gap: 8px;
             font-size: 18px;
             line-height: 21px;
             font-weight: vars.$font-weight-600;
+        }
+    }
+}
+
+.footer{
+    padding-inline: 32px;
+    padding-block: 48px;
+
+    .footer__logo{
+        gap: 4px;
+
+        .footer__logo-image{
+            width: 32px;
+            height: 32px;
+        }
+        .footer__logo-text{
+            color: vars.$primary-text;
+            font-weight: vars.$font-weight-600;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .footer__links{
+        gap: 8px;
+
+        .footer__links-menu{
+            gap: 32px;
+            color: vars.$primary-text;
+            font-weight: vars.$font-weight-600;
+            font-size: 12px;
+            line-height: 19px;
+        }
+        .footer__links-rights{
+            color: vars.$secondary-text;
+            font-weight: vars.$font-weight-400;
+            font-size: 12px;
+            line-height: 19px;
+        }
+    }
+
+    .footer__social{
+        gap: 16px;
+
+        .footer__social-icons{
+            width: 24px;
+            height: 24px;
         }
     }
 }

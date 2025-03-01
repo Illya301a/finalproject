@@ -258,16 +258,57 @@ body {
 .get-started .get-started__container .get-started__container-text_button {
   background-color: #815CCE;
   color: #FFFFFF;
-  max-width: 360px;
-  border-radius: 8px;
   padding-inline: 48px;
   padding-block: 16px;
+  max-width: 360px;
+  border-radius: 8px;
   gap: 4px;
 }
 .get-started .get-started__container .get-started__container-text_button span {
-  padding-inline: 4px;
+  padding-inline: 48px;
   gap: 8px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 600;
+}
+
+.footer {
+  padding-inline: 32px;
+  padding-block: 48px;
+}
+.footer .footer__logo {
+  gap: 4px;
+}
+.footer .footer__logo .footer__logo-image {
+  width: 32px;
+  height: 32px;
+}
+.footer .footer__logo .footer__logo-text {
+  color: #40513B;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.footer .footer__links {
+  gap: 8px;
+}
+.footer .footer__links .footer__links-menu {
+  gap: 32px;
+  color: #40513B;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px;
+}
+.footer .footer__links .footer__links-rights {
+  color: #6C8F70;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+}
+.footer .footer__social {
+  gap: 16px;
+}
+.footer .footer__social .footer__social-icons {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=style.css.map */
