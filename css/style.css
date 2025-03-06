@@ -4,9 +4,8 @@ body {
 }
 
 .container {
-  position: relative;
   font-family: "Inter", sans-serif;
-  max-width: 1280px;
+  width: min(100%, 1280px);
   margin-inline: auto;
 }
 
@@ -226,14 +225,16 @@ body {
   line-height: 19px;
 }
 
+.get-started .get-started__image {
+  width: 50%;
+}
 .get-started .get-started__image img {
-  width: 640px;
   height: 803px;
   padding-block: 48px;
   gap: 74px;
 }
 .get-started .get-started__container {
-  width: 640px;
+  width: 50%;
   padding: 80px 16px 80px 16px;
   gap: 8px;
 }
@@ -311,4 +312,13 @@ body {
 .footer .footer__social .footer__social-icons {
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 1279px) {
+  .container {
+    margin-inline: 0;
+  }
+  .navbar {
+    margin-inline: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

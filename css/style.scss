@@ -6,9 +6,8 @@ body{
 }
 
 .container{
-    position: relative;
     font-family: vars.$font-family;
-    max-width: 1280px;
+    width: min(100%, 1280px);
     margin-inline: auto;
 }
 
@@ -17,16 +16,16 @@ body{
     background-color: #455740;
 }
 
-    .navbar{
-        padding: 8px;
-        margin-bottom: 85px;
+.navbar{
+    padding: 8px;
+    margin-bottom: 85px;
 
-        .navbar__logo{
+    .navbar__logo{
         margin-block: auto;
         padding-inline: 8px;
         gap: 8px;
 
-            .navbar__logo-image{
+        .navbar__logo-image{
             width: 24px;
             height: 24px;
         }
@@ -250,14 +249,16 @@ body{
 }
 
 .get-started{
+    .get-started__image{
+        width: 50%;
+    }
     .get-started__image img{
-        width: 640px;
         height: 803px;
         padding-block: 48px;
         gap: 74px;
     }
     .get-started__container{
-        width: 640px;
+        width: 50%;
         padding: 80px 16px 80px 16px;
         gap: 8px;
 
@@ -345,6 +346,26 @@ body{
         }
     }
 }
+
+@media (max-width: 1279px){
+    .container{
+        margin-inline: 0;
+    }
+    .navbar{
+        
+        margin-inline: 0;
+    }
+}
+
+// @media (max-width: 834px){
+//     .navbar{
+//         width: 100%;
+    
+//         .navbar__search{
+//             width: 473px;
+//         }
+//     }
+// }
 
 
 
