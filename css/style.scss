@@ -6,6 +6,8 @@ body{
 }
 
 .container{
+    position: relative;
+    max-width: 1280px;
     font-family: vars.$font-family;
     width: min(100%, 1280px);
     margin-inline: auto;
@@ -39,7 +41,7 @@ body{
     }
 
     .navbar__search{
-        width: 903px;
+        width: 73%;
         border: 1px solid #7AAC7F;
         border-radius: 8px;
         padding: 8px;
@@ -253,9 +255,11 @@ body{
         width: 50%;
     }
     .get-started__image img{
+        display: flex;
         height: 803px;
         padding-block: 48px;
         gap: 74px;
+        object-fit: cover;
     }
     .get-started__container{
         width: 50%;
@@ -347,25 +351,71 @@ body{
     }
 }
 
-@media (max-width: 1279px){
-    .container{
-        margin-inline: 0;
-    }
+@media (max-width: 1262px){
     .navbar{
-        
-        margin-inline: 0;
+        .navbar__search{
+            width: 58%;
+        }
+        .navbar__button{
+            padding-inline: 20px;
+            padding-block: 12px;
+        }
+    }
+
+    .gallery{
+        .gallery__secondary{
+            width: 100%;
+            gap: 0;
+            flex-direction: column;
+            align-items: center;
+
+            .gallery__secondary-left, .gallery__secondary-right{
+                width: 580px;
+                height: 396px;
+            }
+        }
+    }
+
+    .about-us{
+        width: 100%;
+    }
+    .featured{
+        .featured__cards{
+            .featured__cards-blocks{
+                width: 389px;
+
+                .featured__cards-blocks--image img{
+                    width: 389px;
+                }
+            }
+        }
+    }
+    
+
+    .featured__cards:last-child{
+        width: 100%;
+
+        .featured__cards-blocks:last-child{
+            width: 802px;
+            height: 426px;
+
+            .featured__cards-blocks--image img{
+                width: 802px;
+                height: 312px;
+            }
+        }
+    }
+
+    .get-started{
+        height: 803px;
+
+        .get-started__container{
+            .get-started__container-text{
+                width: 385px;
+            }
+        }
     }
 }
-
-// @media (max-width: 834px){
-//     .navbar{
-//         width: 100%;
-    
-//         .navbar__search{
-//             width: 473px;
-//         }
-//     }
-// }
 
 
 
