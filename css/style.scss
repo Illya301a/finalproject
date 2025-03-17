@@ -5,6 +5,10 @@ body{
     background-color: #E1EBDC;
 }
 
+img{
+    object-fit: cover;
+}
+
 .container{
     position: relative;
     max-width: 1280px;
@@ -133,7 +137,6 @@ body{
             width: 480px;
             height: 396px;
             border-radius: 16px;
-            object-fit: cover;
         }
     }
 }
@@ -191,7 +194,6 @@ body{
         height: 489px;
         border-radius: 32px;
         gap: 8px;
-        object-fit: cover;
     }
 }
 
@@ -221,7 +223,6 @@ body{
                 height: 312px;
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
-                object-fit: cover;
             }
 
             .featured__cards-blocks--text{
@@ -259,7 +260,6 @@ body{
         height: 803px;
         padding-block: 48px;
         gap: 74px;
-        object-fit: cover;
     }
     .get-started__container{
         width: 50%;
@@ -418,7 +418,63 @@ body{
 }
 
 @media (max-width: 818px){
+    .navbar{
+        flex-wrap: wrap;
 
+        .navbar__search{
+            position: absolute;
+            top: 60px;
+            width: 93vw;
+            margin-inline: auto;
+        }
+    }
+
+    .gallery{
+        .gallery__secondary{
+            align-items: flex-start;
+
+            .gallery__secondary-left, .gallery__secondary-right{
+            width: 326px;
+            height: 396px;
+            }
+        }
+
+        
+        .gallery-center{
+            width: 358px;
+            height: 540px;
+        }
+    }
+
+    .get-started{
+        flex-direction: column;
+        height: 100%;
+
+        .get-started__image{
+            width: 100%;
+        }
+
+        .get-started__container{
+            width: 100%;
+            
+
+            .get-started__container-text{
+                width: 100%;
+                margin-inline: auto;
+            }
+        }
+    }
+
+    .footer{
+        flex-wrap: wrap;
+
+        .footer__social{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 
