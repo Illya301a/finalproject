@@ -1,25 +1,23 @@
 # Hometask Completion Website
 
 ## Overview
-This website is designed to help users efficiently manage and complete their hometasks. It provides task tracking, reminders, and productivity tools to ensure users stay organized and on top of their assignments.
+The website may serve various purposes, from representing a business to providing interactive services to users. Made in a few weeks by Andreluka Illia.
 
 ## Features
-- Task management: Add, edit, and delete tasks
-- Deadline reminders and notifications
-- Progress tracking and analytics
+- Offering a platform for user interaction.
+- Informational resource for users.
+- Selling products or services.
 - User-friendly interface with a clean and responsive design
-- Dark mode support
 
 ## Technologies Used
-- HTML5, CSS3, JavaScript (Bootstrap 5 for styling)
-- Backend: [Specify your backend stack, e.g., Node.js, Python, PHP]
-- Database: [Specify your database, e.g., MySQL, MongoDB]
-- Authentication: [Specify if you use JWT, OAuth, etc.]
+- HTML5
+- LibSass 3.6.6
+- Tailwind 4 for styling
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hometask-website.git
+   git clone https://github.com/Illya301a/finalproject.git
 
 2. Navigate to the project directory:
     ```bash
