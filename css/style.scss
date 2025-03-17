@@ -9,16 +9,20 @@ img{
     object-fit: cover;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     position: relative;
     max-width: 1280px;
     font-family: vars.$font-family;
-    width: min(100%, 1280px);
+    width: min(vars.$full-size, 1280px);
     margin-inline: auto;
 }
 
 .container__fix{
-    width: 100%;
+    width: vars.$full-size;
     background-color: #455740;
 }
 
@@ -39,21 +43,21 @@ img{
         .navbar__logo-text{
             color: vars.$primary-text;
             font-weight: vars.$font-weight-600;
-            font-size: 14px;
-            line-height: 21px;
+            font-size: vars.$font-primary;
+            line-height: vars.$line-primary;
         }
     }
 
     .navbar__search{
         width: 73%;
         border: 1px solid #7AAC7F;
-        border-radius: 8px;
+        border-radius: vars.$radius-primary;
         padding: 8px;
         gap: 4px;
         color: vars.$primary-color;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        font-weight: vars.$font-weight-400;
+        font-size: vars.$font-primary;
+        line-height: vars.$line-primary;
     }
 
     .navbar__dropdown{
@@ -61,19 +65,18 @@ img{
         gap: 8px;
         color: vars.$primary-text;
         font-weight: vars.$font-weight-600;
-        line-height: 19px;
-        font-size: 12px;
+        line-height: vars.$line-secondary;
+        font-size: vars.$font-secondary;
     }
 
     .navbar__button{
         background-color: vars.$buttons-color;
-        border-radius: 8px;
+        border-radius: vars.$radius-primary;
         color: vars.$white-color;
         font-weight: vars.$font-weight-600;
-        font-size: 14px;
-        line-height: 21px;
-        padding-inline: 20px;
-        padding-block: 12px;
+        font-size: vars.$font-primary;
+        line-height: vars.$line-primary;
+        padding: 12px 20px;
         gap: 4px;
     }
 }
@@ -94,7 +97,7 @@ img{
 
     .discover__subtitle{
         color: vars.$secondary-text;
-        font-weight: 400;
+        font-weight: vars.$font-weight-400;
         font-size: 22px;
         line-height: 28.6px;
     }
@@ -102,11 +105,11 @@ img{
     .discover__button{
         width: 360px;
         background-color: vars.$buttons-color;
-        border-radius: 8px;
+        border-radius: vars.$radius-primary;
         color: vars.$white-color;
         font-weight: vars.$font-weight-600;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: vars.$font-primary;
+        line-height: vars.$line-primary;
         padding-inline: 48px;
         padding-block: 16px;
         gap: 4px;
@@ -121,7 +124,7 @@ img{
     .gallery-center{
         width: 800px;
         height: 540px;
-        border-radius: 16px;
+        border-radius: vars.$radius-secondary;
         box-shadow: 0px 16px 48px 0px #00000029;
         position: absolute;
         top: 50%;
@@ -136,15 +139,14 @@ img{
         .gallery__secondary-left, .gallery__secondary-right{
             width: 480px;
             height: 396px;
-            border-radius: 16px;
+            border-radius: vars.$radius-secondary;
         }
     }
 }
 
 .statement{
     background-color: #455740;
-    padding-inline: 16px;
-    padding-block: 144px;
+    padding: 144px 16px;
     margin-bottom: 160px;
     gap: 48px;
 
@@ -162,8 +164,8 @@ img{
         .statement__content-subtitle{
             color: #9DC08B;
             font-weight: vars.$font-weight-700;
-            font-size: 51px;
-            line-height: 61px;
+            font-size: vars.$font-bigger;
+            line-height: vars.$line-bigger;
             letter-spacing: vars.$letter-spacing;
         }
     }
@@ -177,14 +179,14 @@ img{
     .about-us__title{
         color: vars.$primary-text;
         font-weight: vars.$font-weight-700;
-        font-size: 51px;
-        line-height: 61px;
+        font-size: vars.$font-bigger;
+        line-height: vars.$line-bigger;
         letter-spacing: vars.$letter-spacing;
     }
 
     .about-us__subtitle{
         color: vars.$secondary-text;
-        font-weight: 400;
+        font-weight: vars.$font-weight-400;
         font-size: 22px;
         line-height: 28.6px;
     }
@@ -205,8 +207,8 @@ img{
     .featured__text{
         font-weight: vars.$font-weight-700;
         color: vars.$primary-text;
-        font-size: 51px;
-        line-height: 61px;
+        font-size: vars.$font-bigger;
+        line-height: vars.$line-bigger;
         letter-spacing: vars.$letter-spacing;
     }
     .featured__cards{
@@ -215,7 +217,7 @@ img{
 
         .featured__cards-blocks{
             width: 384px;
-            border-radius: 16px;
+            border-radius: vars.$radius-secondary;
             background-color: #B9D8A9;
 
             .featured__cards-blocks--image img{
@@ -233,8 +235,8 @@ img{
             .featured__cards-blocks--text_title{
                 font-weight: vars.$font-weight-600;
                 color: vars.$primary-text;
-                font-size: 14px;
-                line-height: 21px;
+                font-size: vars.$font-primary;
+                line-height: vars.$line-primary;
 
             }
             .featured__cards-blocks--text_subtitle{
@@ -244,8 +246,8 @@ img{
             .featured__cards-blocks--text_more{
                 font-weight: vars.$font-weight-600;
                 color: vars.$primary-text;
-                font-size: 12px;
-                line-height: 19px;
+                font-size: vars.$font-secondary;
+                line-height: vars.$line-secondary;
             }
         }
     }
@@ -263,7 +265,7 @@ img{
     }
     .get-started__container{
         width: 50%;
-        padding: 80px 16px 80px 16px;
+        padding: 80px 16px;
         gap: 8px;
 
         .get-started__container-text{
@@ -275,8 +277,8 @@ img{
         .get-started__container-text_title{
             color: vars.$primary-text;
             font-weight: vars.$font-weight-700;
-            font-size: 51px;
-            line-height: 61px;
+            font-size: vars.$font-bigger;
+            line-height: vars.$line-bigger;
             letter-spacing: vars.$letter-spacing;
         }
         .get-started__container-text_subtitle{
@@ -291,22 +293,21 @@ img{
             padding-inline: 48px;
             padding-block: 16px;
             max-width: 360px;
-            border-radius: 8px;
+            border-radius: vars.$radius-primary;
             gap: 4px;
         }
         .get-started__container-text_button span{
             padding-inline: 48px;
             gap: 8px;
             font-size: 18px;
-            line-height: 21px;
+            line-height: vars.$line-primary;
             font-weight: vars.$font-weight-600;
         }
     }
 }
 
 .footer{
-    padding-inline: 32px;
-    padding-block: 48px;
+    padding: 48px 32px;
 
     .footer__logo{
         gap: 4px;
@@ -318,8 +319,8 @@ img{
         .footer__logo-text{
             color: vars.$primary-text;
             font-weight: vars.$font-weight-600;
-            font-size: 14px;
-            line-height: 21px;
+            font-size: vars.$font-primary;
+            line-height: vars.$line-primary;
         }
     }
 
@@ -330,14 +331,14 @@ img{
             gap: 32px;
             color: vars.$primary-text;
             font-weight: vars.$font-weight-600;
-            font-size: 12px;
-            line-height: 19px;
+            font-size: vars.$font-secondary;
+            line-height: vars.$line-secondary;
         }
         .footer__links-rights{
             color: vars.$secondary-text;
             font-weight: vars.$font-weight-400;
-            font-size: 12px;
-            line-height: 19px;
+            font-size: vars.$font-secondary;
+            line-height: vars.$line-secondary;
         }
     }
 
@@ -357,14 +358,13 @@ img{
             width: 58%;
         }
         .navbar__button{
-            padding-inline: 20px;
-            padding-block: 12px;
+            padding: 12px 20px;
         }
     }
 
     .gallery{
         .gallery__secondary{
-            width: 100%;
+            width: vars.$full-size;
             gap: 0;
             flex-direction: column;
             align-items: center;
@@ -377,7 +377,7 @@ img{
     }
 
     .about-us{
-        width: 100%;
+        width: vars.$full-size;
     }
     .featured{
         .featured__cards{
@@ -393,7 +393,7 @@ img{
     
 
     .featured__cards:last-child{
-        width: 100%;
+        width: vars.$full-size;
 
         .featured__cards-blocks:last-child{
             width: 802px;
@@ -419,8 +419,6 @@ img{
 
 @media (max-width: 818px){
     .navbar{
-        flex-wrap: wrap;
-
         .navbar__search{
             position: absolute;
                 top: 80px;
@@ -432,7 +430,6 @@ img{
 
     .gallery{
         .gallery__secondary{
-
             .gallery__secondary-left, .gallery__secondary-right{
                 width: 90%;
                 height: 396px;
@@ -462,10 +459,10 @@ img{
 
     .get-started{
         flex-direction: column;
-        height: 100%;
+        height: vars.$full-size;
 
         .get-started__image{
-            width: 100%;
+            width: vars.$full-size;
         }
 
         .get-started__image img{
@@ -473,19 +470,19 @@ img{
         }
 
         .get-started__container{
-            width: 100%;
+            width: vars.$full-size;
             
 
             .get-started__container-text{
-                width: 100%;
+                width: vars.$full-size;
                 margin-inline: auto;
             }
         }
     }
 
     .footer{
-        flex-wrap: wrap;
-
+        padding-block: 70px;
+        
         .footer__social{
             position: absolute;
             bottom: 0;
