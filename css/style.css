@@ -365,9 +365,16 @@ button {
   .navbar .navbar__search {
     position: absolute;
     top: 80px;
-    width: 99%;
+    width: calc(100% - 15px);
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .discover {
+    width: calc(100% - 15px);
+    margin-inline: auto;
+  }
+  .discover .discover__button {
+    width: 100%;
   }
   .gallery .gallery__secondary .gallery__secondary-left, .gallery .gallery__secondary .gallery__secondary-right {
     width: 90%;
@@ -377,6 +384,10 @@ button {
     width: 95%;
     height: 540px;
   }
+  .featured {
+    width: calc(100% - 15px);
+    margin-inline: auto;
+  }
   .featured .featured__cards .featured__cards-blocks {
     width: 802px;
     height: 426px;
@@ -384,6 +395,10 @@ button {
   .featured .featured__cards .featured__cards-blocks .featured__cards-blocks--image img {
     width: 802px;
     height: 312px;
+  }
+  .about-us {
+    width: calc(100% - 15px);
+    margin-inline: auto;
   }
   .get-started {
     flex-direction: column;

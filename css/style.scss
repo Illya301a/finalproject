@@ -422,9 +422,18 @@ button{
         .navbar__search{
             position: absolute;
                 top: 80px;
-                width: 99%;
+                width: vars.$screen-spacing;
                 left: 50%;
                 transform: translate(-50%, -50%);
+        }
+    }
+
+    .discover{
+        width: vars.$screen-spacing;
+        margin-inline: auto;
+
+        .discover__button{
+            width: 100%;
         }
     }
 
@@ -444,6 +453,9 @@ button{
     }
 
     .featured{
+        width: vars.$screen-spacing;
+        margin-inline: auto;
+
         .featured__cards{
             .featured__cards-blocks{
                 width: 802px;
@@ -455,6 +467,11 @@ button{
                 }
             }
         }
+    }
+
+    .about-us{
+        width: vars.$screen-spacing;
+        margin-inline: auto;
     }
 
     .get-started{
