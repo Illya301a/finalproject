@@ -499,6 +499,12 @@ button{
 
     .footer{
         padding-block: 70px;
+
+        .footer__links{
+            .footer__links-menu{
+                font-size: 11px;
+            }
+        }
         
         .footer__social{
             position: absolute;
